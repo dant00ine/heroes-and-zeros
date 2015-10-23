@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
+  
   get 'heroes' => 'heroes#index'
+  get 'heroes/:id' => 'heroes#show'
+  get 'feats' => 'feats#index'
+
+  put 'heroes/:id' => 'heroes#update'
   post 'heroes' => 'heroes#create'
+  delete 'heroes/:id' => 'heroes#delete'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
