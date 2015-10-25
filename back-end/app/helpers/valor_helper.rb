@@ -1,0 +1,2 @@
+module ValorHelper
+end

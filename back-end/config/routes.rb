@@ -2,8 +2,10 @@ Rails.application.routes.draw do
   
   get 'heroes' => 'heroes#index'
   get 'heroes/:id' => 'heroes#show'
-  get 'feats' => 'feats#index'
+  get 'heroes/:id/feats' => 'feats#index'
 
+  put 'heroes/:id/feats' => 'feats#create'
+  put 'valor/:id' => 'valor#update'
   put 'heroes/:id' => 'heroes#update'
   post 'heroes' => 'heroes#create'
   delete 'heroes/:id' => 'heroes#delete'

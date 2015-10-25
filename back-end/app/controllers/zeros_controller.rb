@@ -1,2 +1,0 @@
-class ZerosController < ApplicationController
-end

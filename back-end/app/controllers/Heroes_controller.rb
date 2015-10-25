@@ -5,7 +5,7 @@ class HeroesController < ApplicationController
 		render json: heroes
 	end
 	def create
-		hero = Hero.create(name: params[:hero][:name], description: params[:hero][:description])
+		hero = Hero.create(name: params[:hero][:name], description: params[:hero][:description], valor: 0)
 		render json: hero
 	end
 	def delete
